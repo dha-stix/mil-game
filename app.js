@@ -1,7 +1,6 @@
 //REPRESENT ELEMENTS AS VARIABLES
 const button = document.querySelector(".checkBtn")
 const inputValue = document.querySelector(".input")
-const computerGuess =  Math.floor(Math.random() * 100)
 const emptyAlert = document.querySelector(".alert-empty")
 const rangeErrorAlert = document.querySelector(".alert-range")
 const hotAlert = document.querySelector(".alert-info")
@@ -25,6 +24,7 @@ const checkTemperature = (userGuess, computerGuess) => {
 //EVENTS
 button.addEventListener("click", (e)=> {
     e.preventDefault()
+    const computerGuess =  Math.floor(Math.random() * 100)
    if(!inputValue.value) {
        emptyAlert.classList.replace("alert", "show")
    }

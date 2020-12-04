@@ -10,11 +10,11 @@ body {
   text-align: center;
   width: 100%;
 }
-h1 {
+h2 {
   color: #fff;
   font-family: "Quicksand", sans-serif;
 }
-h1 > i {
+h2 > i {
   margin: 0px 5px;
   color: red;
 }
@@ -46,6 +46,18 @@ form {
   border: 1px solid #263859;
   outline: none;
   background-color: #ff6768;
+  color: white;
+  font-family: "Quicksand", sans-serif;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+}
+.restartBtn {
+  margin-top: 15px;
+  padding: 12px 30px;
+  border: 1px solid #263859;
+  outline: none;
+  background-color: rgb(52, 160, 52);
   color: white;
   font-family: "Quicksand", sans-serif;
   border-radius: 5px;
