@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Texturina:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Hot / Cold Game</title>
+</head>
+<body>
+    <h1 class="animate__animated animate__fadeIn">  <i class="fas fa-mug-hot"> </i> HOT or COLD <i class="fas fa-ice-cream"></i></h1>
+
+    <h3>Choose any number from 0 - 100, then the computer will tell you, if you are hot or cold or normal</h3>
+    <form class="form">
+        <input type="number" class="input" required>
+        <input type="button" value="LET'S PLAY" class="checkBtn">
+    </form>
+
+    <!-- ALERT -->
+    <div class="alert alert-empty">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Field cannot be empty, Number required
+    </div>
+
+    <div class="alert alert-range">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        Number must be between 0 and 100
+    </div>
+
+    <div class="alert alert-info">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        You're hot <i class="fas fa-fire"></i>
+    </div>
+
+    <div class="alert alert-normal">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        You're hot <i class="fas fa-fire"></i>
+    </div>
+
+    <div class="alert alert-cold">
+        <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+        You're cold! 
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
